@@ -1,0 +1,123 @@
+:root {
+  --background: rgba(24, 33, 68, 1);
+  --background-dark: rgba(10, 17, 46, 1);
+  --background-overlay: rgba(24, 33, 68, .85);
+  --accent: rgba(63, 73, 113, 1);
+  --accent-dark: rgba(39, 47, 80, 1);
+  --accent-light: rgba(73, 88, 154, 1);
+  --font: rgba(255, 255, 255, 1);
+  --font-light: rgba(204, 204, 204, 1);
+  --button-background: rgba(40, 50, 88, 1);
+}
+
+* {
+  font-family: Revalia;
+  color: white;
+}
+
+@font-face {
+  font-family: Revalia;
+  src: url('../fonts/Revalia-Regular.ttf');
+}
+
+html {
+  background-color: var(--background);
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 14px;
+}
+
+.left {
+  float: left;
+  width: 25%;
+}
+
+.right {
+  float: right;
+  width: 75%;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-right: 3px solid var(--accent);
+  border-bottom: 3px solid var(--accent);
+  height: 100px;
+}
+
+.panel-nav {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  border-bottom: 3px solid var(--accent);
+  border-right: 3px solid var(--accent);
+}
+
+.panel-nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 100px;
+  padding-bottom: 5px;
+}
+
+.panel-nav-item:not(:last-child) {
+  border-right: 3px solid var(--accent);
+}
+
+.panel-nav-item a h4 {
+  margin: 0;
+}
+
+.profile-img {
+  width: 48px;
+}
+
+.navbar {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  float: right;
+  padding: 1em;
+  border-bottom: 3px solid var(--accent);
+}
+
+.navbar a h4 {
+  display: inline;
+  padding-right: 1em;
+}
+
+.main-nav {
+  position: relative;
+}
