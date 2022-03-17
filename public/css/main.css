@@ -98,6 +98,10 @@ h6 {
   margin: 0;
 }
 
+.panel-content {
+  border-right: 3px solid var(--accent);
+}
+
 .profile-img {
   width: 48px;
 }
